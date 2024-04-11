@@ -11,15 +11,15 @@
     }
     .download-icon {
         position: absolute;
-        bottom: 10px; /* Adjust the distance from the bottom */
-        right: 10px; /* Adjust the distance from the left */
+        bottom: 7vw; /* Adjust the distance from the bottom */
+        left: 33vw; /* Adjust the distance from the left */
         width: 50px; /* Adjust the width of the icon */
         height: auto;
         cursor: pointer;
     }
     img {
         display: block;
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
     }
 </style>
@@ -27,14 +27,14 @@
 <body>
 
 <div class="container">
-    <img src="mhumappipeline_htn_2024march18.png" alt="Your Image" style="height:400px;width:640px">
-    <img class="download-icon" src="./download.svg" alt="Download"  onclick="downloadImage('mhumappipeline_htn_2024march18.png')">
+    <img src="MapForDownlaodpng.png" alt="Your Image">
+    <img class="download-icon" src="./download.svg" alt="Download"  onclick="downloadImage('mhumappipeline_htn_2024March4.png')">
 </div>
 <script>
     function downloadImage(imageUrl) {
         var link = document.createElement('a');
         link.href = imageUrl;
-        link.download = 'mhumappipeline_htn_2024march18.png';
+        link.download = 'downloaded-image.jpg';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
